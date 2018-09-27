@@ -6,8 +6,8 @@ from sklearn.pipeline import make_pipeline
 from sklearn.model_selection import GridSearchCV
 
 
-df_train = pd.read_csv('data/train.csv')
-df_test = pd.read_csv("data/test.csv")
+df_train = pd.read_csv('data_root/train.csv')
+df_test = pd.read_csv("data_root/test.csv")
 
 df_train['Age'] = df_train['Age'].fillna(df_train['Age'].median())
 df_train['Embarked'] = df_train['Embarked'].fillna('S')

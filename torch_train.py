@@ -57,7 +57,7 @@ print()
 print('---- standard scaling ----')
 stdsc = StandardScaler()
 X_train_std = stdsc.fit_transform(X_train)
-X_test_std = stdsc.fit_transform(X_test)
+X_test_std = stdsc.transform(X_test)
 
 print(pd.DataFrame(X_train_std).describe())
 print()
